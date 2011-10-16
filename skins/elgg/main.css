@@ -1,0 +1,507 @@
+/*
+
+	elgg.org
+	v0.2
+	
+	dark blue #00487d
+	light blue #e5eff6
+
+*/
+
+
+body {
+	padding: 0;
+	margin: 0;
+    font-size:80%;
+    color:#555;
+    font-family: Arial, Helvetica, Verdana,  sans-serif;
+    line-height:1.8em;
+    text-align:center;
+/* 	background: url(http://elgg.org/images/page_background.gif) repeat-x top left; */
+}
+
+a {
+    color: #00487d;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+ul li {
+
+}
+
+#header {
+   height:72px;
+   padding:0;
+   margin:0;
+}
+
+#header-inner {
+    width:940px;
+    margin:auto;
+    text-align:left;
+    padding:0;
+    
+}
+
+#header-inner h1 {
+    color:#fff;
+    margin:0 0 0 0;
+    padding:0;
+    display:none;
+}
+
+#header-inner #logo {
+    margin:0;
+    padding:0;
+    background: url(http://elgg.org/images/elgg_org_logo.gif) no-repeat top left;
+    width:121px;
+    height:72px;
+}
+
+#menu {
+    padding:0;
+    margin:0 auto;
+    text-align:left;
+    height:30px;
+}
+
+#menu-inner {
+    width:940px;
+    text-align:right;
+    margin:0 auto;
+    padding:0;
+}
+#menu-inner a span { cursor: pointer; }
+#menu a:active { outline: none; }
+#menu a:focus { -moz-outline-style: none; }
+
+#menu a {
+	float:right;
+	margin:0;
+	padding:0 0 0 10px;
+	text-decoration:none;
+	font-weight: bold;
+	font-size: 110%;
+}
+#menu a span {
+	float:left;
+	display:block;
+	padding:3px 14px 0px 3px;
+	height:27px;
+	margin:0;
+	color:#ffffff;
+	/* color:#547faa;*/
+}
+#menu a.disabled span {
+	color:#547faa;
+}
+#menu a.disabled {
+	color:#547faa;
+}
+#menu a.disabled:hover {
+	color:#547faa;
+}
+#menu a.disabled:hover span {
+	color:#547faa;
+}
+
+/* IE 6 & 7 fix */
+* html #menu a span  {
+    height:30px;
+}
+
+#menu a:hover span {
+	color:#00487d;
+}
+#menu a:hover {
+	color:#00487d;
+}
+
+#menu a.selected {
+	background: url(community_tab_left_selected.gif) no-repeat left top;
+}
+#menu a.selected span {
+	background: url(community_tab_right_selected.gif) no-repeat right top;
+	color:#00487d;
+}
+
+#spotlight {
+    min-height: 50px;
+    margin:0;
+    padding:0;
+    background: #e5eff6 url(http://elgg.org/images/spotlightback_plain.jpg) no-repeat bottom center;
+}
+
+/* IE 6 & 7 fix */
+* html #spotlight  {
+    height:50px;
+}
+
+#spotlight-inner {
+    margin:0 auto;
+    width:940px;
+    text-align:left;
+    padding:10px;
+    text-align:right;
+}
+
+#spotlight-inner h2 {
+	float:left;
+       margin:0;
+       padding:0;
+}
+
+.spotlightbold {
+	font-weight: bold;
+	color:#00487d;
+}
+
+#searchBody {
+	/*float:right;*/
+}
+
+#personal_tools {
+   text-align:right;
+}
+
+#personal_tools li {
+	display:inline;
+	list-style:none;
+	font-weight:normal;
+}
+
+#page-contents {
+    width:940px;
+    margin:auto;
+    padding:0;
+    text-align:left;
+    background:#fff;
+}
+
+#page-contents p {
+    /*font-size:0.9em;*/
+    line-height:1.6em;
+    margin:5px 0 5px 0;
+}
+
+#page-contents h1 {
+    border-bottom:1px solid #ccc;
+    font-size:20px;
+    padding-left:4px;
+    margin:20px 0 0 0;
+}
+
+#page-contents h2 {
+	background:#e4e4e4;
+	border-bottom:1px solid #d0d0d0;
+	color:#666666;
+	font-size:1.1em;
+	line-height:1em;
+	margin:30px 0 0px 0 !important;
+	padding:5px;	
+/*
+	margin:10px 0 10px 0;
+	padding:5px;
+	font-size:16px;
+	border-bottom:1px solid #ccc; */
+	/* background:#d8dfea; */
+}
+
+#page-contents h3 {
+	font-size:1.1em;
+	line-height:1em;
+	margin-bottom:6px;
+}
+
+#footer {
+    text-align:center;
+    margin: auto;
+    height:60px;
+	background: #00487d url(http://elgg.org/images/footerback.png) repeat-x top left;
+	clear:both;
+	border-top: 1px solid #e5eff6;
+	color:#e5eff6;
+	padding-top: 24px;
+}
+#footer p {
+	color:#e5eff6;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+#footer a {
+	color:#e5eff6;
+}
+#footer a:hover {
+	text-decoration: underline;
+	color:#ffffff;
+}
+
+/* same as splitpane-content in Elgg */
+
+#column-content {
+    margin: 0;
+    padding: 0 0 0 10px;
+    width:720px;
+    text-align: left;
+    color:#000;
+    float: right;
+    min-height:500px;
+}
+
+/* same as splitpane-sidebar in Elgg */
+
+#column-one {
+   width: 200px;
+   margin:0;
+   padding:0 0 0 5px;
+   background:#fff;
+   margin:0;
+   text-align:left;
+}
+
+.portlet {
+    margin:0 0 20px 0;
+    padding:0px;
+    border:0px solid #ccc;
+    width:200px;
+    /*height:100px;*/
+}
+
+.portlet ul {
+    margin:0 0 5px 0;
+    padding:0;
+    list-style: square;
+    font-size:13px;
+}
+
+.portlet ol {
+    margin:0 0 5px 15px;
+    padding:0 0 0 3px;
+    font-size:13px;
+}
+
+.portlet li {
+    padding:3px 0 0 0;
+    list-style:none;
+}
+
+.portlet h3 {
+    font-size:20px;
+    letter-spacing: -0.05em;
+    color:#00487d;
+    margin:0 20px 10px 0;
+    padding:0 0 5px 0;
+    border-bottom:1px dashed #00487d;
+}
+
+.portlet p {
+    font-size:13px;
+    line-height: 18px;
+}
+
+.printfooter {
+display:none;
+}
+
+#bodyContent {
+	margin-bottom:10px;
+}
+
+
+
+
+
+
+
+
+
+dt {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 1em 1em;
+	padding: 0;
+}
+
+pre, code {
+	font-family:Monaco,"Courier New",Courier,monospace;
+	font-size:12px;
+	background:#EBF5FF;
+	overflow:auto;
+}
+code {
+	padding:2px 3px;
+}
+pre {
+	padding:3px 15px;
+	margin:0px 0 15px 0;
+	line-height:1.3em;
+}
+blockquote {
+	padding:3px 15px;
+	margin:0px 0 15px 0;
+	line-height:1.3em;
+	background:#fdffc3;
+	border:none !important;
+}
+
+
+
+
+.source-php span,
+.source-xml span {
+	color:inherit !important;
+}
+
+a.new {
+	color:#599ac6 !important;
+}
+
+#quickbar a.new {
+	color:#599ac6 !important;
+}
+
+
+
+
+
+
+
+/****
+ Original mediawiki styles
+****
+
+.source-php {
+	color: #cc0; 
+	background-color: #f9f9f9;
+	padding:4px;
+	font-size:14px;
+	border: 1px dashed #2f6fab;
+}
+
+code {
+	background-color: #f9f9f9;
+}
+pre {
+	padding: 1.2em;
+	border: 1px dashed #2f6fab;
+	color: black;
+	background-color: #f9f9f9;
+	line-height: 1.1em;
+}
+*/
+/* thumbnails */
+div.thumb {
+	margin-bottom: .5em;
+	margin-left: .5em;
+	border-style: solid;
+	border-color: white;
+	width: auto;
+	float:right;
+}
+div.thumbinner {
+	border: 1px solid #ccc;
+	padding: 3px !important;
+	background-color: #f9f9f9;
+	font-size: 94%;
+	text-align: center;
+	overflow: hidden;
+}
+html .thumbimage {
+	border: 1px solid #ccc;
+}
+html .thumbcaption {
+	border: none;
+	text-align: left;
+	line-height: 1.4em;
+	padding: 3px !important;
+	font-size: 94%;
+}
+
+#toc {
+	background: #f1f1f1;
+	border: 1px solid #dadada;
+	-webkit-border-radius: 3px;
+	float: right;
+	margin-left: 16px;
+	padding: 4px;
+	margin-bottom: 12px;
+	font-size: 85%;
+	width: 200px;
+	margin: 16px;
+}
+
+#toctitle {
+   margin:0;
+}
+
+#toctitle h2 {
+	color:#555;
+	border-bottom:1px dashed #ccc;
+       padding:4px;
+	margin:0;
+}
+
+#toc ul {
+   margin:0;
+   padding:0 0 0 5px;
+}
+
+#toc li {
+   list-style:none;
+}
+
+h2 .editsection { font-size: 85%; }
+
+.editsection {
+	float: left;
+	margin: 0 5px 0 0;
+}
+
+/* GOOGLE SEARCH RESULTS */
+#cse-search-box {
+	float:right;
+	width:auto;
+	height:auto;
+	top:20px;
+	right:36px;
+	position: absolute;
+}
+#cse-search-box input[type="text"] {
+	height:25px;
+	background-image: none !important;
+	-webkit-border-radius: 4px; 
+	-moz-border-radius: 4px;
+	border:3px solid white;
+	padding:0;
+	margin:3px;
+}
+#cse-search-box input[type="submit"] {
+	font: 13px/100% Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: white;
+	background:#547faa;
+	border: 3px solid #547faa;
+	-webkit-border-radius: 4px; 
+	-moz-border-radius: 4px;
+	width: auto;
+	height: 25px;
+	padding: 1px;
+	margin:3px;
+	cursor: pointer;
+}
+#cse-search-box input[type="submit"]:hover {
+	color: #00487D;
+	background:white;
+	border: 3px solid white;
+	cursor: pointer;	
+}
