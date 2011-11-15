@@ -282,7 +282,7 @@ class ElggTemplate extends QuickTemplate {
 </div><!-- end of page contents div -->
 
 <div id="footer">
-	<p><a href="http://community.elgg.org/mod/reportedcontent/add.php?address=<?php echo urlencode('http://docs.elgg.org' . $_SERVER['REQUEST_URI']); ?>">Report Page</a> | Elgg is a <a href="http://www.curveriderhq.com" target="_blank">Curverider</a> project</p>
+	<p><a href="http://community.elgg.org/mod/reportedcontent/add.php?address=<?php echo urlencode('http://docs.elgg.org' . $_SERVER['REQUEST_URI']); ?>">Report Page</a> | Elgg is an Elgg Foundation project</p>
 </div>
 
 	<?php 
